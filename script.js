@@ -7,6 +7,7 @@ const Modal = {
       .classList
       .add('active')
   },
+
   close() {
     // fechar o modal
     // remover a class active do modal
