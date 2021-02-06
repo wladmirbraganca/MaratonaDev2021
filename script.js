@@ -24,7 +24,7 @@ const Storage = {
     return JSON.parse(localStorage.getItem("dev.finances:transactions")) || []
   },
   set(transaction) {
-    localStorage.setItem("dev.finances:transaction", JSON.stringify(transaction))
+    localStorage.setItem("dev.finances:transactions", JSON.stringify(transaction))
   }
 }
 
@@ -230,7 +230,7 @@ const Form = {
     event.preventDefault()
 
     try {
-      //verificaar se todas as infromações foram reenchidas
+      //verificar se todas as infromações foram preenchidas
       Form.validateFields()
       //formatar os dados para salvar
       const transaction = Form.formatValues()
@@ -257,6 +257,13 @@ const App = {
     DOM.updateBalance()
 
     Storage.set(Transaction.all)
+
+    /*
+    balanceCheck()
+    windows.onload = balanceCheck)
+    windows.onload = totalImg()
+    seTimeout(totalLightbackground(), 3000)
+    */
 
   },
   reload() {
