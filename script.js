@@ -54,7 +54,6 @@ const Transaction = {
   add(transaction) {
     Transaction.all.push(transaction)
 
-
     App.reload()
 
   },
@@ -63,6 +62,35 @@ const Transaction = {
     Transaction.all.splice(index, 1)
 
     App.reload()
+  },
+
+  order() {
+
+    Transaction.all.sort((transactions, index) => {
+      let valorA = transactions.date.split("/").reverse().join();
+      let valorB = index.date.split("/").reverse().join();
+      if (valorA < valorB) {
+        return 1
+      } else {
+        return -1
+      }
+    })
+    App.reload()
+
+  },
+  orderI() {
+
+    Transaction.all.sort((transactions, index) => {
+      let valorA = transactions.date.split("/").reverse().join();
+      let valorB = index.date.split("/").reverse().join();
+      if (valorA > valorB) {
+        return 1
+      } else {
+        return -1
+      }
+    })
+    App.reload()
+
   },
 
   incomes() {

@@ -11,6 +11,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
     rel="stylesheet">
+
+  <link rel="shortcut icon" href="assets/Dollar.ico" type="image/x-icon">
+
 </head>
 
 <body>
@@ -60,7 +63,36 @@
             <th>Descrição</th>
             <th>Valor</th>
             <th>Data</th>
-            <th></th>
+            <th>
+              <label for="ordenar">Ordernar</label>
+
+              <svg id="ordenar" name="ordenar" width="35px" onclick="Transaction.order()" stroke="currentColor"
+                fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48"
+                height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                <polygon fill="#546E7A" points="38,33 38,5 34,5 34,33 28,33 36,43 44,33"></polygon>
+                <g fill="#2196F3">
+                  <path d="M16.4,20h-3V8.6L9.9,9.7V7.3L16,5.1h0.3V20z"></path>
+                  <path
+                    d="M19.4,43H9.2v-2l4.8-5.1c0.4-0.4,0.7-0.8,0.9-1.1c0.2-0.3,0.5-0.6,0.6-0.9c0.2-0.3,0.3-0.5,0.3-0.8 c0.1-0.2,0.1-0.5,0.1-0.7c0-0.7-0.2-1.2-0.5-1.6c-0.3-0.4-0.8-0.6-1.4-0.6c-0.3,0-0.7,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.7,0.5 c-0.2,0.2-0.3,0.5-0.4,0.8s-0.1,0.6-0.1,1h-3c0-0.7,0.1-1.3,0.4-1.9c0.2-0.6,0.6-1.1,1-1.6c0.5-0.4,1-0.8,1.6-1.1 c0.6-0.3,1.4-0.4,2.2-0.4c0.8,0,1.5,0.1,2.1,0.3c0.6,0.2,1.1,0.5,1.5,0.8s0.7,0.8,0.9,1.3s0.3,1.1,0.3,1.8c0,0.5-0.1,1-0.2,1.4 S18.3,34.5,18,35s-0.6,0.9-1,1.4c-0.4,0.5-0.9,1-1.4,1.5L13,40.6h6.4V43z">
+                  </path>
+                </g>
+              </svg>
+
+              <svg id="ordenar" name="ordenar" width="35px" onclick="Transaction.orderI()" stroke="currentColor"
+                fill="currentColor" stroke-width="0" version="1" viewBox="0 0 48 48" enable-background="new 0 0 48 48"
+                height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                <polygon fill="#546E7A" points="38,33 38,5 34,5 34,33 28,33 36,43 44,33"></polygon>
+                <g fill="#2196F3">
+                  <path
+                    d="M19.2,20H9v-2l4.8-5.1c0.4-0.4,0.7-0.8,0.9-1.1c0.2-0.3,0.5-0.6,0.6-0.9c0.2-0.3,0.3-0.5,0.3-0.8 c0.1-0.2,0.1-0.5,0.1-0.7c0-0.7-0.2-1.2-0.5-1.6c-0.3-0.4-0.8-0.6-1.4-0.6c-0.3,0-0.7,0.1-0.9,0.2c-0.3,0.1-0.5,0.3-0.7,0.5 c-0.2,0.2-0.3,0.5-0.4,0.8s-0.1,0.6-0.1,1h-3c0-0.7,0.1-1.3,0.4-1.9c0.2-0.6,0.6-1.1,1-1.6c0.5-0.4,1-0.8,1.6-1.1 c0.6-0.3,1.4-0.4,2.2-0.4c0.8,0,1.5,0.1,2.1,0.3c0.6,0.2,1.1,0.5,1.5,0.8s0.7,0.8,0.9,1.3c0.2,0.5,0.3,1.1,0.3,1.8 c0,0.5-0.1,1-0.2,1.4s-0.4,0.9-0.7,1.4s-0.6,0.9-1,1.4c-0.4,0.5-0.9,1-1.4,1.5l-2.6,2.8h6.4V20z">
+                  </path>
+                  <path d="M16.2,43h-3V31.6l-3.5,1.1v-2.4l6.2-2.2h0.3V43z"></path>
+                </g>
+              </svg>
+              <!--  <img src="assets/order.png" id="ordenar" name="ordenar" width="35px" onclick="Transaction.order()" /> -->
+              <!--  <img src="assets/order.png" id="ordenar" name="ordenar" width="35px" onclick="Transaction.orderI()" />-->
+            </th>
+            <!--           <th></th> -->
           </tr>
         </thead>
 
@@ -69,6 +101,7 @@
 
       </table>
     </section>
+
 
   </main>
   <div class="modal-overlay">
@@ -99,7 +132,15 @@
   </div>
   </div>
   <footer>
-    <p>dev.finance$</p>
+    <span>
+      <a href="https://github.com/wladmirbraganca/" target="_blank">
+        <img class="github-icon" src="assets/social/GitHub-Mark-32px.png" alt="" srcset="">
+      </a>
+      <a href="https://linkedin.com/in/wladmir-bragança-19679426/" target="_blank">
+        <img class="linkedin-icon" src="assets/social/linkedin-32px.png" alt="">
+      </a>
+    </span>
+    <p>dev.finance$ - by Wladmir Bragança</p>
   </footer>
   <script src="./script.js"></script>
 </body>
