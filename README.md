@@ -1,7 +1,7 @@
 # MaratonaDev2021
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+<p>Esse projeto foi desenvolvido com as seguintes tecnologias:<p>
 
-HTML
-CSS
-JavaScript
+  HTML
+  CSS
+  JavaScript
