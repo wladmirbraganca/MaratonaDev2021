@@ -53,9 +53,11 @@ const Transaction = {
     Transaction.all.sort((transactions, index) => {
       let valorA = transactions.date.split("/").reverse().join();
       let valorB = index.date.split("/").reverse().join();
+
       if (valorA < valorB) {
         return 1
-      } else {
+      }
+      else {
         return -1
       }
     })
@@ -67,6 +69,7 @@ const Transaction = {
     Transaction.all.sort((transactions, index) => {
       let valorA = transactions.date.split("/").reverse().join();
       let valorB = index.date.split("/").reverse().join();
+      console.log(valorA > valorB)
       if (valorA > valorB) {
         return 1
       } else {
