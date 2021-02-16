@@ -29,23 +29,7 @@ const Storage = {
 }
 
 const Transaction = {
-  /* all: [
-     {
-       description: 'Luz',
-       amount: -50000,
-       date: '23/01/2021',
-     },
-     {
-       description: 'Website',
-       amount: 500000,
-       date: '23/01/2021',
-     },
-     {
-       description: 'Internet',
-       amount: -20000,
-       date: '23/01/2021',
-     },
-   ],*/
+
 
   //no lugar da arrey fica o Storage.get()
 
@@ -288,7 +272,7 @@ const App = {
 
     /*
     balanceCheck()
-    windows.onload = balanceCheck)
+    windows.onload = balanceCheck()
     windows.onload = totalImg()
     seTimeout(totalLightbackground(), 3000)
     */
